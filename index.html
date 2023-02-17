@@ -1,120 +1,139 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <!-- <link rel="stylesheet" href="dist/css/bootstrap/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="dist/css/style.css">
-  <link rel="stylesheet" href="dist/css/fontawesome-free-6.2.1/css/all.css">
+  <title>Curriculum Vitae | Adrián Tula</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-free-6.2.1/css/all.min.css">
+  <!-- Mis estilos -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<!-- Comienzo de etiqueta cuerpo de html -->
+<body style="background-color: rgb(226, 226, 226);">
 
+  <!-- Inicio de navegador bootstrap con estilos bootstrap-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    
+    <!-- contenedor principal para los items de menu -->
+    <div class="container">
+      <!-- Nombre de sitio web como "lOGO" -->
+      <a class="navbar-brand mx-auto" href="/#personal-data">CV | Hector Gabriel Adrián Tula</a>
 
-  <div class="_content_wrapper">
+      <!-- Inicio Boton que se muestra en vista responsive de dispositivos -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Fin Boton que se muestra en vista responsive de dispositivos -->
 
-    <div class="_asidebar">
-      <div class="_user_info">
-        <img class="_avatar _radius" src="" alt="Avatar">
-        <p class="_text_white _text_bold"></p>
-        <span class="_text_white _text_s"></span>
+      <!-- Inicio contenedor de opciones colapsadas en vista de dispositivos -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+        <!--Comienzo de Lista no ordenada -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+        <!--Item -->
+        <li class="nav-item">
+            <!--Enlace -->
+            <a class="nav-link active" href="/#personal-data" data-bs-target="#personal-data">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#experience" data-bs-target="#experience">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#skills" data-bs-target="#skills">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#knowledge" data-bs-target="#knowledge">Conocimientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contacto</a>
+          </li>
+        </ul>
+        <!--Fin de Lista no ordenada -->
       </div>
-      <ul class="_menu">
-        <li class="_menu_item _active">
-          <a href="#personal-info" class="_menu_link">
-            <i class="fas fa-user"></i>
-            Información Personal
-          </a>
-        </li>
-        <li class="_menu_item">
-          <a href="#experience" class="_menu_link">
-            <i class="fas fa-certificate"></i>
-            Experiencia
-          </a>
-        </li>
-        <li class="_menu_item">
-          <a href="#skills" class="_menu_link">
-            <i class="fas fa-lightbulb"></i>
-            Habilidades
-          </a>
-        </li>
-      </ul>
-      <div class="_user_info _social">
-        <p class="_text-white _text_bold">
-          <a class="_social_icon" href="#">
-           <span style="">
-             <i class="icon fab fa-facebook-f"></i>
-            </span>
-          </a>
-          <a class="_social_icon" href="#">
-            <span>
-              <i class="icon fab fa-instagram-square"></i>
-            </span>
-          </a>
-          <a class="_social_icon" href="#">
-            <span>
-              <i class="icon fab fa-twitter"></i>
-            </span>
-          </a>
-        </p>
+      <!-- Inicio contenedor de opciones colapsadas en vista de dispositivos -->
+
+    </div>
+  
+  </nav>
+  <!-- Fin de navegador bootstrap con estilos bootstrap-->
+
+  <div class="container">
+
+    <div class="" id="personal-data">
+      <div class="wrapper">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h3>Datos Personales</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <main>
-      <div class="_content">
-        <div class="_section_1">
-          <div class="_section_header">
-            <h1 class="_h1 _text_gray _text_center _text_uppercase">Información Personal</h1>
-          </div>
-
-          <div class="_section_personal_info">
-
-            <div class="_personal_data">
-              <p class=" _text_m _text_bold">
-                Nombre: <span class="name"></span>
-              </p>
-              <p class=" _text_m _text_bold">
-                Apellido: <span class="last_name"></span>
-              </p>
-              <p class=" _text_m _text_bold">
-                Edad: <span class="age"></span>
-              </p>
-              <p class=" _text_m _text_bold">
-                E-mail: <a class="_email_link" href="mailto:email"></a>
-              </p>
-              <p class=" _text_m _text_bold">
-                Teléfono: <span class="phone"></span>
-              </p>
-              <p class=" _text_m _text_bold">
-                Domicilio: <span class="address"></span>
-              </p>
-              <div class="_presentation">
-                <h4 class="_h4 _text_bold">Presentación</h4>
-                <p class="_text_m">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quos voluptate
-                  assumenda, asperiores
-                  accusamus necessitatibus cumque. Pariatur, veniam aspernatur accusantium vitae a expedita eum
-                  obcaecati
-                  aliquam. Accusantium perspiciatis soluta velit.</p>
-              </div>
+    <div class="" id="experience">
+      <div class="wrapper">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h3>Experiencia</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
             </div>
-
           </div>
-
         </div>
       </div>
-    </main>
+    </div>
+   
+    <div class="" id="skills">
+      <div class="wrapper">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h3>Habilidades</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="" id="knowledge">
+      <div class="wrapper">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <h3>Conocimientos</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
-
-  <script src="dist/js/jquery-v3-6-3.js"></script>
-  <!-- <script src="dist/js/bootstrap/bootstrap.min.js"></script> -->
-  <!-- <script src="dist/js/bootstrap/bootstrap.bundle.min.js"></script> -->
-  <script src="dist/js/code.js"></script>
-
 </body>
+<!-- Fin de etiqueta cuerpo de html -->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- Mis scripts -->
+<script src="assets/js/code.js"></script>
 
 </html>
