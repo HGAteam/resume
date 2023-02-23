@@ -15,43 +15,45 @@
 </head>
 
 <!-- Comienzo de etiqueta cuerpo de html -->
+
 <body style="background-color: rgb(226, 226, 226);">
 
   <!-- Inicio de navegador bootstrap con estilos bootstrap-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    
+
     <!-- contenedor principal para los items de menu -->
     <div class="container">
       <!-- Nombre de sitio web como "lOGO" -->
-      <a class="navbar-brand mx-auto" href="/#personal-data">CV | Hector Gabriel Adrián Tula</a>
+      <a class="navbar-brand mx-auto" href="#personal-data">CV | Hector Gabriel Adrián Tula</a>
 
       <!-- Inicio Boton que se muestra en vista responsive de dispositivos -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Fin Boton que se muestra en vista responsive de dispositivos -->
 
       <!-- Inicio contenedor de opciones colapsadas en vista de dispositivos -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
+
         <!--Comienzo de Lista no ordenada -->
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-        <!--Item -->
-        <li class="nav-item">
+          <!--Item -->
+          <li class="nav-item">
             <!--Enlace -->
-            <a class="nav-link active" href="/#personal-data" data-bs-target="#personal-data">Inicio</a>
+            <a class="nav-link active" href="#personal-data" data-bs-target="#personal-data">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#experience" data-bs-target="#experience">Experiencia</a>
+            <a class="nav-link" href="#experience" data-bs-target="#experience">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#skills" data-bs-target="#skills">Habilidades</a>
+            <a class="nav-link" href="#skills" data-bs-target="#skills">Habilidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#knowledge" data-bs-target="#knowledge">Conocimientos</a>
+            <a class="nav-link" href="#knowledge" data-bs-target="#knowledge">Conocimientos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact.html">Contacto</a>
+            <a class="nav-link" href="contact.html">Contacto</a>
           </li>
         </ul>
         <!--Fin de Lista no ordenada -->
@@ -59,7 +61,7 @@
       <!-- Inicio contenedor de opciones colapsadas en vista de dispositivos -->
 
     </div>
-  
+
   </nav>
   <!-- Fin de navegador bootstrap con estilos bootstrap-->
 
@@ -71,9 +73,63 @@
           <div class="card-body">
             <div class="card-title">
               <h3>Datos Personales</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <hr>
+              <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4 text-center">
+                      <img class="img-fluid rounded mb-3" src="" alt="avatar">
+                    </div>
+                    <div class="col-sm-12 col-lg-8">
+                      <p style="font-size:16px;">
+                        <b>
+                          Hector Gabriel Adrián Tula
+                        </b>
+                      </p>
+                      <p class="text-muted">Fecha de nacimiento:
+                        <b class="mr-3">06/05/1989 | <span id="age"></span></b>
+                      </p>
+                      <p class="text-muted">Correo electrónico:
+                        <b class="mr-3">adrgabtu@gmail.com</b>
+                      </p>
+                      <p class="text-muted">Domicilio:
+                        <b class="mr-3" id="address">Alsina 1358, San Miguel de Tucumán, Tucumán, Argentina</b>
+                      </p>
+                      <p class="text-muted">Teléfono | Celular:
+                        <b class="mr-3">(0381) 4367764 / (0381) 153201216 </b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                  <div id="main-nav"></div>
+                  <p style="font-size:16px;">
+                    <b>
+                      Presentación
+                    </b>
+                  </p>
+                  <p class="text-muted">
+                    <em>Hola Soy Adrián de San Miguel de Tucumán. Hace 8 años que soy programador freelancer, en estos
+                      momentos estoy comenzando mi primer emprendimiento de diseño y desarrollo profesional para
+                      pequeñas y grandes empresas.
+                    </em>
+                  </p>
+                  <p class="text-muted">
+                    <em>
+                      Actualmente me mantengo capacitandome en las diferentes tecnologias para el desarrollo, como ser,
+                      React y Angular en lo que es el desarrollo Web para Progresive Web Applications(POW) y Xamarin en
+                      C# para desarrollo de Aplicaciones cross-platform.
+                    </em>
+                  </p>
+                  <p class="text-muted">
+                    <em>
+                      Desde pequeño que disfrutaba de investigar sobre como funciona una computadora y como se
+                      programan las aplicaciones, aunque por el momento me dedique a lo web, sigo estudiando lo que más me gusta en otras areas del desarrollo.
+                    </em>
+                  </p>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -86,39 +142,82 @@
           <div class="card-body">
             <div class="card-title">
               <h3>Experiencia</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <ul>
+                <li>
+                  Desarrollo Web en CMS Joomla, Drupal, Wordpress, Webflow - 3 años
+                </li>
+                <li>
+                  Desarrollo Web en Frameworks Laravel y Vuejs - 8 años
+                </li>
+                <li>
+                  Desarrollo Base de datos Relacionales MySql /SQL - 8 años
+                </li>
+                <li>
+                  Desarrollo Base de datos No Relacionales MongoDB - 8 años
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-   
+
     <div class="" id="skills">
       <div class="wrapper">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <h3>Habilidades</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <ul>
+                <li>
+                  Excelente comunicación en equipo.
+                </li>
+                <li>
+                  Adaptación a cambios durante el proceso de desarrollo.
+                </li>
+                <li>
+                  Facil adaptación a diferentes frameworks y lenguajes de programación.
+                </li>
+                <li>
+                  Rapidez en detección y solución de Bugs.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-   
+
     <div class="" id="knowledge">
       <div class="wrapper">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <h3>Conocimientos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam culpa fugiat dicta enim magni tempore reiciendis accusamus. Voluptatum quaerat fugiat veniam voluptas rerum deserunt distinctio odit illum, modi et?</p>
+              <ul>
+                <li>
+                  HTML, CSS, Javscript, C#
+                </li>
+                <li>
+                  Desarrollo Web PHP, Laravel, Vuejs, VanillaJS.
+                </li>
+                <li>
+                  Diseño y Desarrollo de Base de datos MySql, Sql, MongoDB y Sqlite.
+                </li>
+                <li>
+                  Metodologias Agiles Scrum y Kanban.
+                </li>
+                <li>
+                  Manejo de Controladores de versiones GitHub, BitBucket y Gitlab.
+                </li>
+                <li>
+                  Alojamiento Web, VPS, nginx, apache, Cpanel.
+                </li>
+                <li>
+                  Sistemas operativos Ubuntu / linux / Windows.
+                </li>
+              </ul>
+
             </div>
           </div>
         </div>
