@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae | Adrián Tula</title>
+  <title>CV | Hector Gabriel Adrián Tula</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
@@ -16,7 +16,7 @@
 
 <!-- Comienzo de etiqueta cuerpo de html -->
 
-<body style="background-color: rgb(226, 226, 226);">
+<body>
 
   <!-- Inicio de navegador bootstrap con estilos bootstrap-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -37,23 +37,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!--Comienzo de Lista no ordenada -->
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-          <!--Item -->
+        <ul id="list" class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <!--Enlace -->
-            <a class="nav-link active" href="#personal-data" data-bs-target="#personal-data">Inicio</a>
+            <a class="nav-link" href="#personal-data">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience" data-bs-target="#experience">Experiencia</a>
+            <a class="nav-link" href="#experience">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills" data-bs-target="#skills">Habilidades</a>
+            <a class="nav-link" href="#skills">Habilidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#knowledge" data-bs-target="#knowledge">Conocimientos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contacto</a>
+            <a class="nav-link" href="#knowledge">Conocimientos</a>
           </li>
         </ul>
         <!--Fin de Lista no ordenada -->
@@ -65,155 +60,190 @@
   </nav>
   <!-- Fin de navegador bootstrap con estilos bootstrap-->
 
-  <div class="container">
+  <main class="container">
 
-    <div class="" id="personal-data">
-      <div class="wrapper">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <h3>Datos Personales</h3>
-              <hr>
-              <div class="row">
-                <div class="col-sm-12 col-lg-6">
+    <div class="wrapper">
+
+      <section id="personal-data">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 mb-5">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Datos Personales</h3>
+                  <hr>
                   <div class="row">
+
                     <div class="col-sm-12 col-lg-4 text-center">
-                      <img class="img-fluid rounded mb-3" src="" alt="avatar">
+                      <img class="rounded mb-3" src="" alt="avatar">
                     </div>
                     <div class="col-sm-12 col-lg-8">
-                      <p style="font-size:16px;">
-                        <b>
-                          Hector Gabriel Adrián Tula
+                      <p class="text-black" style="font-size:15px;">
+                        <b class="mr-3">
+                          <span id="full_name"></span>
                         </b>
                       </p>
                       <p class="text-muted">Fecha de nacimiento:
-                        <b class="mr-3">06/05/1989 | <span id="age"></span></b>
+                        <b class="mr-3">
+                          <span id="age"></span>
+                        </b>
                       </p>
                       <p class="text-muted">Correo electrónico:
-                        <b class="mr-3">adrgabtu@gmail.com</b>
+                        <b class="mr-3">
+                          <span id="email"></span>
+                        </b>
                       </p>
                       <p class="text-muted">Domicilio:
-                        <b class="mr-3" id="address">Alsina 1358, San Miguel de Tucumán, Tucumán, Argentina</b>
+                        <b class="mr-3">
+                          <span id="address"></span>
+                        </b>
                       </p>
                       <p class="text-muted">Teléfono | Celular:
-                        <b class="mr-3">(0381) 4367764 / (0381) 153201216 </b>
+                        <b class="mr-3">
+                          <span id="phone"></span>
+                        </b>
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-6">
-                  <div id="main-nav"></div>
-                  <p style="font-size:16px;">
-                    <b>
-                      Presentación
-                    </b>
-                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 mb-5">
+            <div id="main_container">
+
+              <div class="card">
+                <div class="card-body">
+
+                  <div class="card-title">
+                    <h3>Presentación</h3>
+                    <hr>
+                  </div>
+
                   <p class="text-muted">
-                    <em>Hola Soy Adrián de San Miguel de Tucumán. Hace 8 años que soy programador freelancer, en estos
+                    <em>Hola Soy <b id="pre_name"></b> de <b id="pre_address"></b>, en estos
                       momentos estoy comenzando mi primer emprendimiento de diseño y desarrollo profesional para
                       pequeñas y grandes empresas.
                     </em>
                   </p>
-                  <p class="text-muted">
-                    <em>
-                      Actualmente me mantengo capacitandome en las diferentes tecnologias para el desarrollo, como ser,
-                      React y Angular en lo que es el desarrollo Web para Progresive Web Applications(POW) y Xamarin en
-                      C# para desarrollo de Aplicaciones cross-platform.
-                    </em>
-                  </p>
-                  <p class="text-muted">
-                    <em>
-                      Desde pequeño que disfrutaba de investigar sobre como funciona una computadora y como se
-                      programan las aplicaciones, aunque por el momento me dedique a lo web, sigo estudiando lo que más me gusta en otras areas del desarrollo.
-                    </em>
-                  </p>
-                </div>
 
+                  <p class="text-muted">
+                    <em>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam harum voluptatibus ratione modi.
+                      Delectus hic animi beatae ullam, saepe cupiditate. Amet dolore voluptates excepturi dolor
+                      expedita
+                      accusamus perferendis nihil non!
+                    </em>
+                  </p>
+
+                  <p class="text-muted">
+                    <em>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit saepe obcaecati porro
+                      facere? Magnam, dolores ab! Dignissimos ducimus, exercitationem eum repellendus blanditiis
+                      molestiae quod magnam atque eos. Tempora, obcaecati.
+                    </em>
+                  </p>
+
+                </div>
               </div>
+
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="" id="experience">
-      <div class="wrapper">
+        </div>
+      </section>
+
+      <section id="experience">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <h3>Experiencia</h3>
-              <ul>
-                <li>
-                  Desarrollo Web en CMS Joomla, Drupal, Wordpress, Webflow - 3 años
-                </li>
-                <li>
-                  Desarrollo Web en Frameworks Laravel y Vuejs - 8 años
-                </li>
-                <li>
-                  Desarrollo Base de datos Relacionales MySql /SQL - 8 años
-                </li>
-                <li>
-                  Desarrollo Base de datos No Relacionales MongoDB - 8 años
-                </li>
-              </ul>
+              <hr>
+                  <ul class="my_style_ul">
+                    <li>
+                      <i class="fas fa-briefcase"></i>
+                      Desarrollo Web en CMS Joomla, Drupal, Wordpress, Webflow
+                    </li>
+                    <li>
+                      <i class="fas fa-briefcase"></i>
+                      Desarrollo Web en Frameworks Laravel y Vuejs
+                    </li>
+                    <li>
+                      <i class="fas fa-briefcase"></i>
+                      Desarrollo Base de datos Relacionales MySql /SQL
+                    </li>
+                    <li>
+                      <i class="fas fa-briefcase"></i>
+                      Desarrollo Base de datos No Relacionales MongoDB
+                    </li>
+                  </ul>
             </div>
+
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="" id="skills">
-      <div class="wrapper">
+      <section id="skills">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <h3>Habilidades</h3>
-              <ul>
+              <ul class="my_style_ul">
                 <li>
+                  <i class="fas fa-gauge"></i>
                   Excelente comunicación en equipo.
                 </li>
                 <li>
+                  <i class="fas fa-gauge"></i>
                   Adaptación a cambios durante el proceso de desarrollo.
                 </li>
                 <li>
+                  <i class="fas fa-gauge"></i>
                   Facil adaptación a diferentes frameworks y lenguajes de programación.
                 </li>
                 <li>
+                  <i class="fas fa-gauge"></i>
                   Rapidez en detección y solución de Bugs.
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="" id="knowledge">
-      <div class="wrapper">
+      <section id="knowledge">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <h3>Conocimientos</h3>
-              <ul>
+              <ul class="my_style_ul">
                 <li>
+                  <i class="fas fa-rocket"></i>
                   HTML, CSS, Javscript, C#
                 </li>
                 <li>
+                  <i class="fas fa-rocket"></i>
                   Desarrollo Web PHP, Laravel, Vuejs, VanillaJS.
                 </li>
                 <li>
+                  <i class="fas fa-rocket"></i>
                   Diseño y Desarrollo de Base de datos MySql, Sql, MongoDB y Sqlite.
                 </li>
                 <li>
+                  <i class="fas fa-rocket"></i>
                   Metodologias Agiles Scrum y Kanban.
                 </li>
                 <li>
+                  <i class="fas fa-rocket"></i>
                   Manejo de Controladores de versiones GitHub, BitBucket y Gitlab.
                 </li>
                 <li>
+                  <i class="fas fa-rocket"></i>
                   Alojamiento Web, VPS, nginx, apache, Cpanel.
                 </li>
                 <li>
+                  <i class="fas fa-rocket"></i>
                   Sistemas operativos Ubuntu / linux / Windows.
                 </li>
               </ul>
@@ -221,18 +251,28 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
     </div>
 
-  </div>
+  </main>
 
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
 </body>
 <!-- Fin de etiqueta cuerpo de html -->
 
 <!-- Scripts -->
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-<!-- Mis scripts -->
+<!-- Mi script -->
 <script src="assets/js/code.js"></script>
+<script>
+
+</script>
 
 </html>

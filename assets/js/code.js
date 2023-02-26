@@ -1,28 +1,65 @@
-// var full_name = document.querySelector('span ["class="full_name"]');
-// var age = document.querySelector('span ["class="age"]');
-// var address = document.querySelector('span ["class="address"]');
-// var email = document.querySelector('span ["class="email"]');
-$(document).ready(function () {
-  var img = document.querySelector("img");
-  var age = document.getElementById("age");
+// VARIABLES GLOBALES
+var full_name = document.getElementById("full_name");
+var pre_name = document.getElementById("pre_name");
+var age = document.getElementById("age");
+var address = document.getElementById("address");
+var pre_address = document.getElementById("pre_address");
+var phone = document.getElementById("phone");
+var email = document.getElementById("email");
+var img = document.querySelector("img");
+var navbar_brand = document.querySelector('a','navbar-brand');
+var title = document.querySelector('title');
 
-  calcularEdad()
+// CUANDO EL DOCUMENTO INICIA, SE CARGA CONTENIDO DE API
+$(document).ready(function () {
 
   $.ajax({
     url: "https://randomuser.me/api/",
     dataType: "json",
     success: function (data) {
       let results = data.results;
+
       results.forEach((result) => {
         img.src = result.picture.large;
-        console.log(result.dob.date);
+        full_name.innerText = result.name.first + ", " + result.name.last;
+        pre_name.innerText =  result.name.first + " " + result.name.last;
+        navbar_brand.innerText =  'CV | '+result.name.first + " " + result.name.last;
+        title.innerText =  'CV | '+result.name.first + " " + result.name.last;
+        email.innerText = result.email;
+        address.innerText =
+          result.location.street.name +
+          ", " +
+          result.location.street.number +
+          ", " +
+          result.location.state +
+          ", " +
+          result.location.country;
+        pre_address.innerText =
+          result.location.street.name +
+          ", " +
+          result.location.street.number +
+          ", " +
+          result.location.state +
+          ", " +
+          result.location.country;
+        phone.innerText = result.phone;
+
+        // FUNCION PARA CALCULAR EDAD
+        calcularEdad(result.dob.date);
       });
+
+      // Cuando se realiza cick encima recarga la web con un nuevo usuario
+      navbar_brand.addEventListener('click', function(e){
+        e.preventDefault;
+        window.location.reload();
+      })
     },
   });
 
-  function calcularEdad() {
+  // FUNCION PARA CALCULAR EDAD
+  function calcularEdad(date) {
     var hoy = new Date();
-    var cumpleanos = new Date('06/05/1989');
+    var cumpleanos = new Date(date);
     var edad = hoy.getFullYear() - cumpleanos.getFullYear();
     var m = hoy.getMonth() - cumpleanos.getMonth();
 
@@ -30,10 +67,7 @@ $(document).ready(function () {
       edad--;
     }
 
-    return age.innerText = edad;
-  }
-
-  function changeInfo(){
-    
+    return (age.innerText =
+      new Date(date).toLocaleDateString("es-ES") + " | " + edad + " años");
   }
 });

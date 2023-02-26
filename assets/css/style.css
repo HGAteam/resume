@@ -9,10 +9,33 @@ body {
   font-size: 14px;
   padding: 0px;
   margin: 0px;
+  /* background: #0436fe; */
+  background-image: url(../img/pattern-1.jpg);
 }
 
 div.wrapper{
   padding-top: 100px;
   font-size:12px;
 }
+div.wrapper>section{
+  padding-top: 45px;
+}
+ul.my_style_ul{
+  list-style: none;
+}
+ul.my_style_ul>li{
+font-size: 16px;
+}
+ul.my_style_ul>li>i{
+font-size: 20px;
+color: blue;
+border: solid blue;
+padding: 10px;
+margin-bottom:4px;
+border-radius: 45%;
+}
 
+footer{
+  margin-top:100px;
+  margin-bottom:100px;
+}
